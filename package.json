@@ -2,6 +2,7 @@
   "name": "auto-updater-lab",
   "version": "1.0.0",
   "main": "main.js",
+  "description": "AutoUpdate Test",
   "author": "Rafael Bianchi",
   "license": "MIT",
   "scripts": {
