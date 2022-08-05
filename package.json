@@ -8,7 +8,8 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.65",
@@ -19,7 +20,8 @@
     "electron": "^20.0.1"
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-squirrel-startup": "^1.0.0",
+    "update-electron-app": "^2.0.1"
   },
   "config": {
     "forge": {
@@ -46,6 +48,17 @@
         {
           "name": "@electron-forge/maker-rpm",
           "config": {}
+        }
+      ],
+      "publishers": [
+        {
+          "name": "@electron-forge/publisher-github",
+          "config": {
+            "repository": {
+              "owner": "Bianchi",
+              "name": "electron-update-test"
+            }
+          }
         }
       ]
     }
