@@ -1,0 +1,15 @@
+{
+  "name": "auto-updater-lab",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "Rafael Bianchi",
+  "license": "MIT",
+  
+    "scripts": {
+      "start": "electron ."
+    },
+  
+  "devDependencies": {
+    "electron": "^20.0.1"
+  }
+}
