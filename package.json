@@ -9,7 +9,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "electron:publish": "electron-forge publish"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.65",
@@ -55,8 +55,8 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "Bianchi",
-              "name": "electron-update-test"
+              "owner": "BianchiBill",
+              "name": "auto-updater-lab"
             }
           }
         }
